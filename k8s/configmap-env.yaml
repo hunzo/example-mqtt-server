@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+  MOSQUITTO_PASSWORD: mosquitto
+  MOSQUITTO_USERNAME: mosquitto
+  MOSQUITTO_VERSION: "1.6"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: mosquitto-env

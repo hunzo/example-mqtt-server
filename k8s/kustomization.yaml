@@ -1,0 +1,8 @@
+namespace: mosquitto
+resources:
+  - namespace-mosquitto.yaml
+  - configmap-mosquitto.yaml
+  - configmap-env.yaml
+  - configmap-entrypoint.yaml
+  - deployment-mosquitto.yaml
+  - service-mosquitto.yaml

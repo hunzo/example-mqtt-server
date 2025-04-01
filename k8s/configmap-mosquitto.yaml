@@ -1,0 +1,22 @@
+apiVersion: v1
+data:
+  mosquitto.conf: |
+    pid_file /var/run/mosquitto/mosquitto.pid
+
+    persistence true
+    persistence_location /mosquitto/data/
+
+    user mosquitto
+
+    # Port to use for the default listener.
+    port 1883
+
+    log_dest file /mosquitto/log/mosquitto.log
+    log_dest stdout
+
+    allow_anonymous false
+    password_file passwordfile
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: mosquitto-configmap
